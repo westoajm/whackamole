@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Whack-A-Mole — Local</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Whack-A-Mole!</h1>
+        <div id="field" aria-label="Experiment play area"><button id="center" aria-label="Start trial"
+                title="Click to start trial"></button><button id="mole" aria-label="Hit the mole" hidden><canvas
+                    id="moleCanvas" width="400" height="400" aria-hidden="true"></canvas></button>
+            <div id="status" aria-live="polite">Move your mouse onto the centre circle to begin.</div>
+        </div>
+        <p id="warning" hidden>Please do not move the mouse before the mole appears.</p>
+        <p id="progress">Preparing experiment…</p>
+        <p>Keep your cursor inside the centre circle until the mole appears. Click the mole as quickly as possible. The
+            CSV downloads automatically after the final trial.</p><button id="download" hidden>Download CSV
+            again</button>
+    </main>
+    <script src="js/update.js"></script>
+    <script src="js/export.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
